@@ -1,0 +1,11 @@
+10/07/2023
+Creating venv(environment) python 3.8 => working on specific version
+updated SSH key => verifying git 
+created .gitignore file => A .gitignore file is a text file used by the version control system Git to specify 
+files and directories that should be ignored and not tracked by Git. 
+By using a .gitignore file, you can prevent accidental commits of unnecessary or sensitive files, keeping your 
+repository clean and focused on the files that are relevant to your project.
+created setup.py => setup.py will help us to build our entire ML application as a package and even deploy in pypi
+created requirements.txt => will have all the package we will need to install while implementing the project
+src => source| __init__.py
+-e . in requirements.txt will automatically trigger setup.py

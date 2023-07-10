@@ -1,0 +1,9 @@
+Agenda:
+
+10-07-2023
+1- Set up the github {Repository}
+ a) new env
+ b) setup.py
+ c) requirements.txt
+
+2- src folder and build the package 
