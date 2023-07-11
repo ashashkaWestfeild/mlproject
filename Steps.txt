@@ -2,10 +2,52 @@
 Creating venv(environment) python 3.8 => working on specific version
 updated SSH key => verifying git 
 created .gitignore file => A .gitignore file is a text file used by the version control system Git to specify 
-files and directories that should be ignored and not tracked by Git. 
-By using a .gitignore file, you can prevent accidental commits of unnecessary or sensitive files, keeping your 
-repository clean and focused on the files that are relevant to your project.
+    files and directories that should be ignored and not tracked by Git. 
+    By using a .gitignore file, you can prevent accidental commits of unnecessary or sensitive files, keeping your 
+    repository clean and focused on the files that are relevant to your project.
 created setup.py => setup.py will help us to build our entire ML application as a package and even deploy in pypi
 created requirements.txt => will have all the package we will need to install while implementing the project
 src => source| __init__.py
 -e . in requirements.txt will automatically trigger setup.py
+
+11/07/2023
+create components folder in src, 
+    It will have __init__.py so that it can be created as a package and later can be imported
+*COMPONENTS WILL HAVE => All the modules OR necessary steps to CREATE a model
+create data_ingestion.py in components => This will have all the code that will help to read the data
+    This file can also contain code for 80:20 split
+create data_transformation.py in components => This will have all the code regarding data transformation
+create model_trainer.py in components => This will have all the code of creating a model
+    This file can also contain code for confusion matrix or Adj. R squarred code
+# We can still add model_evaluation.py, data_validation.py, etc in components
+create pipeline folder in src => create __init__.py, so that we can import this
+    Create train_pipeline.py and predict_pipeline.py
+create logger.py in src => for logging
+create exception.py in src => for exception handling purpose
+create utils.py in src => will contain all the functionalities which can be used in entire application
+    e.g. code for mongodb client or the code for saving the model to cloud
+
+Now, start with exception handling in python by imorting sys,
+    This code will remain same for all our projects
+# The python sys module provides functions and variables which are used to manipulate different parts of the Python Runtime Environment.
+# So any exception that is basically getting control, the sys library will automatically willhave that information
+# Exception handling is a programming concept and a mechanism used to handle and manage errors or exceptional conditions that may occur during the execution of a program. 
+# It is not a specific code or function itself, but rather a set of techniques and constructs used to handle and respond to exceptions or errors gracefully.
+
+Now, logger.py
+# The purpose of a logger.py file is to provide a logging system that allows developers to record and manage log messages during the execution of a program.
+# Logging is a crucial part of software development as it helps in tracking program execution, troubleshooting issues, and monitoring the behavior of an application. 
+# The logger.py file usually contains code that sets up a logger object, configures its behavior, and defines how log messages should be handled and formatted.
+
+
+
+
+
+
+
+
+
+
+
+
+
